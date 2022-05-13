@@ -55,7 +55,7 @@ $(function(){
     $('#form_reg').on('submit',function(e){
         e.preventDefault()
         var data = { username:$('#form_reg [name=username]').val(),password:$('#form_reg [name=password]').val()}
-        $.post('http://www.liulongbin.top:3007/api/reguser',data,function(res){
+        $.post('/api/reguser',data,function(res){
             if(res.status !== 0){
                 // return console.log(res.message);
                 return layer.msg(res.message);
