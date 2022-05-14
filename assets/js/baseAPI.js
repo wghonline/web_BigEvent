@@ -4,7 +4,7 @@
 // 在这个函数中可以拿到我们给Ajax提供的配置对象
 $.ajaxPrefilter(function(options){
     options.url = 'http://www.liulongbin.top:3007' + options.url
-    console.log(options.url);
+    // console.log(options.url);
 
     // 统一为有权限的接口，设置 headers 请求头
     if(options.url.indexOf('/my/') !== -1){
